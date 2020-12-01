@@ -30,6 +30,8 @@ pub fn main() anyerror!void {
         try number_list.append(val);
     }
 
-    const result = day1.run(a, number_list.items);
+    const result = day1.run(number_list.items);
+    const result2 = day1.run_2(number_list.items);
     std.debug.print("{}\n", .{result});
+    std.debug.print("{}\n", .{result2});
 }
